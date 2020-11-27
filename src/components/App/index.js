@@ -1,4 +1,7 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import LoginButton from "../LoginButton/index";
+import LogoutButton from "../LogoutButton/index";
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <LoginButton />
+      <LogoutButton />
     </div>
   );
 }
