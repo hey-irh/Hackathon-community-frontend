@@ -1,26 +1,22 @@
 import React from "react";
 import "./App.css";
-import LoginButton from "../LoginButton/index";
-import LogoutButton from "../LogoutButton/index";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Homepage from "../../components/Homepage/index";
+import NoticeBoard from "../../components/NoticeBoard/index";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <LoginButton />
-      <LogoutButton />
+    <div>
+      <Router>
+        <Switch>
+          <Route path="/noticeboard">
+            <NoticeBoard />
+          </Route>
+          <Route path="/">
+            <Homepage />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

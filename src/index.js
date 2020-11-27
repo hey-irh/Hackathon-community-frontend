@@ -10,11 +10,10 @@ ReactDOM.render(
     <Auth0Provider
       domain="dev-x1t6jr2y.eu.auth0.com"
       clientId="Bhqtpk45atNrpQEHo4OEeYcIyLgFO6qr"
-      redirectUri={window.location.origin}
+      redirectUri={"http://localhost:3000/noticeboard"}
     >
       <App />
     </Auth0Provider>
-    ,
   </React.StrictMode>,
   document.getElementById("root")
 );
