@@ -6,6 +6,7 @@ import LogoutButton from "../LogoutButton/index";
 // import Profile from "../Profile/index";
 
 function NoticeBoard({ board, setNote }) {
+  console.log(`bord in the Notce board ${board}`);
   return (
     <div>
       <h1>King's Heath Community Noticeboard</h1>

@@ -6,7 +6,12 @@ import NoticeBoard from "../../components/NoticeBoard/index";
 
 function App() {
   const [board, setBoard] = useState([]);
-  const [note, setNote] = useState({});
+  const [note, setNote] = useState({
+    first_name: "",
+    last_name: "",
+    title: "",
+    content: "",
+  });
 
   useEffect(() => {
     async function getAllNotes() {
@@ -14,8 +19,9 @@ function App() {
       const object = await res.json();
       const data = object.payload.rows;
       setBoard(data);
+      console.log(board);
     }
-    console.log(board);
+
     getAllNotes();
   }, []);
 
@@ -29,7 +35,9 @@ function App() {
       const data = await res.json();
       console.log(data);
     }
-    postNotice(note);
+    if (note.content !== "") {
+      postNotice(note);
+    }
   }, [note]);
 
   return (
