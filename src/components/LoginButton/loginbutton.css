@@ -1,0 +1,15 @@
+.login-button {
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: teal;
+  color: goldenrod;
+  border: 5px goldenrod solid;
+}
+
+.login-button:hover {
+  transform: scale(1.1);
+}
