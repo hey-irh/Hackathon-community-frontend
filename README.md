@@ -1,17 +1,25 @@
-# Auth Hackathon
+# Community Notice Board
 
-Today you can build whatever you like! The only requirement is that a user must have to log in to use it.
+Built in 1 day and currently an MVP design, the digitalising of the community notice board aims to create a local, neighbourly space in response to negative consequences of social media.
 
-Today we will be using 3rd party services to manage our users, and integrating them with our apps. This means that we wont have to handle password hashing on our server.
+### To run it locally `npm start`
 
-## Auth options
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**Auth0**
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-[Auth0](https://auth0.com/) is a service that will allow you to have users sign into your project. The docs are good and [this tutorial](https://auth0.com/docs/quickstart/spa/react) will help you integrate it with react.
+Backend found at: https://github.com/hey-irh/hackathon-community-backend
 
-**Firebase**
+## How to use the App
 
-[Firebase](https://firebase.google.com/) can also serve as a drop in auth solution and can also provide many other services. A little more thought will be required for you to integrate it into react. [This will tell you about how to use it on your page](https://firebase.google.com/docs/web/setup). You will have to search for the Auth sections. Do not go down the cli route for today...
+- Log in using Auth0 with your email or Google account
+- Create a post giving it a title, message and your name.
+- Your post will appear on the notice board for you and others to see.
 
-Happy hacking!
+Note: this project is a WIP.
+
+### Tech Used
+
+React, CSS, Javascript (ES6), Node.js, Heroku, PostgreSQL, Auth0.
